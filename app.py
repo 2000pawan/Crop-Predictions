@@ -33,11 +33,11 @@ def main():
     <h2 style='color:  red; text-align: center;'>Please Enter Input</h2>
     '''
     st.markdown(html_temp,unsafe_allow_html=True)
-    country= st.selectbox("Type or Select a Country from the dropdown",df_main['area'].unique()) 
-    crop= st.selectbox("Type or Select a Crop from the dropdown",df_main['item'].unique()) 
-    average_rainfall=st.number_input('Enter Average Rainfall',value=None)
-    presticides=st.number_input('Enter Presticides per Tonnes Use',value=None)
-    avg_temp=st.number_input('Enter Average Temperature',value=None)
+    country= st.selectbox("Type or Select a Country from the Dropdown.",df_main['area'].unique()) 
+    crop= st.selectbox("Type or Select a Crop from the Dropdown.",df_main['item'].unique()) 
+    average_rainfall=st.number_input('Enter Average Rainfall (mm-per-year).',value=None)
+    presticides=st.number_input('Enter Pesticides per Tonnes Use (tonnes of active ingredients).',value=None)
+    avg_temp=st.number_input('Enter Average Temperature (degree celcius).',value=None)
     input=[country,crop,average_rainfall,presticides,avg_temp]
     result=''
     if st.button('Predict',''):
