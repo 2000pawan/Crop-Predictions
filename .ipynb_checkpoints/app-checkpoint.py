@@ -43,7 +43,7 @@ def main():
     if st.button('Predict',''):
         result=prediction(input)
     temp='''
-     <div style='background-color:navy; padding:8px'>
+     <div style='background-color:navy; padding:10px'>
      <h1 style='color: gold  ; text-align: center;'>{}</h1>
      </div>
      '''.format(result)
@@ -72,8 +72,8 @@ def prediction(input):
     test_input=sc.transform(final_df)
     test_input1=pf.transform(test_input)
     predict=model.predict(test_input1)
-    return (f"The Production of Crop Yields:- {(int(((predict[0]/100)*2.47105) * 100) / 100)} quintel/acers yield Production. 
-            That means 1 acers of land produce {(int(((predict[0]/100)*2.47105) * 100) / 100)} quintel of yield crop.It's all depend on differen parameter like average rainfall,average temperature,soil and many more.")
+    return (f'The Production of Crop Yields:- {predict} hg/ha yield'
+            '"HG/HA yield" essentially measures the amount of harvested crop produced per hectare of land.')
 
 
 if __name__=='__main__':
