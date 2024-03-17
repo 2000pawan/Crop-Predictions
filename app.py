@@ -72,8 +72,9 @@ def prediction(input):
     test_input=sc.transform(final_df)
     test_input1=pf.transform(test_input)
     predict=model.predict(test_input1)
-    return (f'The Production of Crop Yields:- {(int(((predict[0]/100)*2.47105) * 100) / 100)} quintel/acers yield Production. 
-            That means 1 acers of land produce {(int(((predict[0]/100)*2.47105) * 100) / 100)} quintel of yield crop.It\'s all depend on differen parameter like average rainfall,average temperature,soil and many more.')
+    result=(int(((predict[0]/100)*2.47105) * 100) / 100)
+    return (f'The Production of Crop Yields:- {result} quintel/acers yield Production. 
+            That means 1 acers of land produce {result} quintel of yield crop.It\'s all depend on differen parameter like average rainfall,average temperature,soil and many more.')
 
 
 if __name__=='__main__':
