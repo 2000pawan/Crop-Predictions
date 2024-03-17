@@ -24,7 +24,7 @@ image=Image.open('img.png')
 # Streamlit Function For Building Button & app.
 
 def main():
-    st.image(image,width=700)
+    st.image(image,width=650)
     st.title('Yield Crop Prediction')
     html_temp='''
     <div style='background-color:red; padding:12px'>
@@ -73,8 +73,7 @@ def prediction(input):
     test_input1=pf.transform(test_input)
     predict=model.predict(test_input1)
     result=(int(((predict[0]/100)*2.47105) * 100) / 100)
-    return (f'The Production of Crop Yields:- {result} quintel/acers yield Production. 
-            That means 1 acers of land produce {result} quintel of yield crop.It all depend on differen parameter like average rainfall,average temperature,soil and many more.')
+    return (f"The Production of Crop Yields:- {result} quintel/acers yield Production.That means 1 acers of land produce {result} quintel of yield crop.It's all depend on differen parameter like average rainfall,average temperature,soil and many more.")
 
 
 if __name__=='__main__':
