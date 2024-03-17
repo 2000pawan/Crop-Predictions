@@ -74,8 +74,7 @@ def prediction(input):
     predict=model.predict(test_input1)
     result=(int(((predict[0]/100)*2.47105) * 100) / 100)
     return (f"The Production of Crop Yields:- {result} quintel/acers yield Production."
-            f"That means 1 acers of land produce {result} quintel of yield crop.",
-            "It's all depend on different Parameter like average rainfall,average temperature,soil and many more.")
+            f"That means 1 acers of land produce {result} quintel of yield crop.It's all depend on different Parameter like average rainfall,average temperature,soil and many more.")
 
 
 if __name__=='__main__':
