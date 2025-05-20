@@ -1,4 +1,3 @@
-
 # README: Crop Production Prediction AI Project
 
 ---
