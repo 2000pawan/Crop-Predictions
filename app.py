@@ -38,7 +38,7 @@ def main():
     <h3 style='color: #000000;text-align: left; font-size: 25px;'>💠 Total Pesticide use: ≈ 61,347 tonnes all area (≈ 0.52 kg per acre) </h3>
     <h3 style='color: #000000;text-align: left; font-size: 25px;'>💠 Average Rainfall: (annual in millimeter during rice growth)</h3> 
     <h3 style='color: #000000;text-align: left; font-size: 25px;'>💠 Average Temperature: (average temp in °C during rice season)</h3>
-    <h4 style= 'color: #000000; text-align: left; font-size: 20px;'> 👉 “Customize this model with your country’s crop type, total pesticide used to cultivated all over area whaere this crop grow, average rainfaal, average temperature data to generate accurate yield insights.”</h4>
+    <h4 style= 'color: #000000; text-align: left; font-size: 20px;'> 👉 “Customize this model with your country’s crop type, total pesticide used to cultivated all over area where this crop grow, average rainfaal, average temperature data to generate accurate yield insights.”</h4>
     </div>
     <p style= "color: red;text-align: right; font-size: 30px;">
     &copy; 2025 Developed by Pawan Yadav. All rights reserved.</p>
